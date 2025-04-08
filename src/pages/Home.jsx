@@ -17,10 +17,7 @@ export const Home = () => {
 	console.log(contacts)
 	return (
 		<div className="text-center mt-5">
-			{contacts?.length > 0 ? contacts.map((contact)=>(<ContactCard key={contact.id} contact={contact} />)):<h1>Create some Contacts</h1>}
-			
-			
-			<Link className="btn btn-primary" to={"/create"}>Create</Link>
+			{contacts?.length > 0 ? contacts.map((contact)=>(<ContactCard key={contact.id} contact={contact} />)):<h1>Add Some Contacts!</h1>}
 		</div>
 	);
 }; 

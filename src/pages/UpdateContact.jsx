@@ -28,56 +28,65 @@ export const UpdateContact = () => {
     }
 
     return (
-        <div className="text-center mt-5">
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" id="inputGroup-sizing-default">Name</span>
+        <div className="container">
+            <div className="updatecard">
+                <h1>Update Contact Info</h1>
+                <div className="text-center mt-5">
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="inputGroup-sizing-default">Name</span>
+                        </div>
+                        <input 
+                            type="text" 
+                            className="form-control" 
+                            aria-label="Default" 
+                            aria-describedby="inputGroup-sizing-default"
+                            onChange={(e)=> setContacts({...contact,name:e.target.value})}
+                            placeholder="Enter new Name"
+                        />
+                    </div>
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="inputGroup-sizing-default">Phone</span>
+                        </div>
+                    <input 
+                            type="text" 
+                            className="form-control" 
+                            aria-label="Default" 
+                            aria-describedby="inputGroup-sizing-default"
+                            onChange={(e)=> setContacts({...contact,phone:e.target.value})}
+                            placeholder="(XXX)-XXX-XXXX"
+                        />
+                    </div>
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="inputGroup-sizing-default">Email</span>
+                        </div>
+                    <input 
+                            type="text" 
+                            className="form-control" 
+                            aria-label="Default" 
+                            aria-describedby="inputGroup-sizing-default"
+                            onChange={(e)=> setContacts({...contact,email:e.target.value})}
+                            placeholder="Enter new email address"
+                        />
+                    </div>
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="inputGroup-sizing-default">Address</span>
+                        </div>
+                    <input 
+                            type="text" 
+                            className="form-control" 
+                            aria-label="Default" 
+                            aria-describedby="inputGroup-sizing-default"
+                            onChange={(e)=> setContacts({...contact,address:e.target.value})}
+                            placeholder="Enter new Address"
+                        />
+                    </div>
+                    <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Update</button>
                 </div>
-                <input 
-                    type="text" 
-                    className="form-control" 
-                    aria-label="Default" 
-                    aria-describedby="inputGroup-sizing-default"
-                    onChange={(e)=> setContacts({...contact,name:e.target.value})}
-                />
             </div>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" id="inputGroup-sizing-default">Phone</span>
-                </div>
-               <input 
-                    type="text" 
-                    className="form-control" 
-                    aria-label="Default" 
-                    aria-describedby="inputGroup-sizing-default"
-                    onChange={(e)=> setContacts({...contact,phone:e.target.value})}
-                />
-            </div>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" id="inputGroup-sizing-default">Email</span>
-                </div>
-               <input 
-                    type="text" 
-                    className="form-control" 
-                    aria-label="Default" 
-                    aria-describedby="inputGroup-sizing-default"
-                    onChange={(e)=> setContacts({...contact,email:e.target.value})}
-                />
-            </div>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" id="inputGroup-sizing-default">Address</span>
-                </div>
-               <input 
-                    type="text" 
-                    className="form-control" 
-                    aria-label="Default" 
-                    aria-describedby="inputGroup-sizing-default"
-                    onChange={(e)=> setContacts({...contact,address:e.target.value})}
-                />
-            </div>
-            <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Submit</button>
         </div>
     );
 };
