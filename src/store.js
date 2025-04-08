@@ -35,12 +35,12 @@ export default function storeReducer(store, action = {}) {
         ...store,
         agenda: action.payload.agenda,
         contacts: action.payload.contacts
-      }
+      };
     case 'get_contacts':
       return {
         ...store,
         contacts: action.payload.contacts
-      }
+      };
     default:
       throw Error('Unknown action.');
   }    
