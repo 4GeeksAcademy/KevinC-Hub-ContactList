@@ -32,7 +32,7 @@ export const UpdateContact = () => {
         <div className="container">
             <div className="updatecard">
                 <h1>Update Contact Info</h1>
-                <div className="text-center mt-5">
+                <div className="text-left mt-5">
                     <div className="input-group mb-3">
                         <div className="input-group-prepend">
                             <span className="input-group-text" id="inputGroup-sizing-default">Name</span>

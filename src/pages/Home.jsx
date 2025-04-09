@@ -17,7 +17,7 @@ export const Home = () => {
 	console.log(contacts)
 	return (
 		<div className="text-center mt-5">
-			{contacts?.length > 0 ? contacts.map((contact)=>(<ContactCard key={contact.id} contact={contact} />)):<h1>Add Some Contacts!</h1>}
+			{contacts?.length > 0 ? contacts.map((contact)=>(<ContactCard key={contact.id} contact={contact} />)):<h1>Add Some Troopers!</h1>}
 		</div>
 	);
 }; 
