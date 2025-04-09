@@ -1,9 +1,10 @@
 i.fa-brands.fa-2x.fa-galactic-republic {
   margin: auto;
   padding-left: 10px;
+  padding-right: 5px;
 }
-i.fa-solid.fa-house.fa-lg {
-    padding-right: 10px;
+div.card {
+    margin-left: 20px;
 }
 div.Header {
     display: flex;
@@ -46,3 +47,12 @@ div.updatecard {
 button.btn.btn-danger {
     margin-left: 5px;
 }
+.contact-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+/* div.text-center.mt-5 {
+    display: flex;
+} */

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export const UpdateContact = () => {
@@ -84,7 +85,7 @@ export const UpdateContact = () => {
                             placeholder="Enter new Address"
                         />
                     </div>
-                    <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Update</button>
+                    <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Update</button> <Link to="/">Or back Home</Link>
                 </div>
             </div>
         </div>

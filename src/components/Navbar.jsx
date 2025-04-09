@@ -9,9 +9,6 @@ export const Navbar = () => {
 				<h1>Vader's Contact Log</h1>
 			</div>
 			<div className="AddCard">
-			<Link to="/">
-				<i class="fa-solid fa-house fa-lg"></i>
-			</Link>
 				<Link className="btn btn-primary" to={"/create"}>Add Stormtrooper</Link>
 			</div>
 		</nav>

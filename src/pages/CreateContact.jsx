@@ -74,7 +74,7 @@ export const CreateContact = () => {
                     placeholder="Enter a current address"
                 />
                 </div>
-                <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Create Contact!</button>
+                <button className="btn btn-primary" onClick={()=> handlecreateContact()}>Create Contact!</button> <Link to="/">Or back Home</Link>
             </div>
         </div>
     );
